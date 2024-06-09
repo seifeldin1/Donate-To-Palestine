@@ -26,6 +26,7 @@ export default function App() {
         <Routes>
           <Route index element={<Home/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
+          <Route path='/Donate-To-Palestine/' element={<Home/>}></Route>
           <Route path='/aboutUs' element={<About/>}></Route>
           <Route path="/contactUs" element={<Contact/>}></Route>
           <Route path='/events' element={<Events/>}></Route>
