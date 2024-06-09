@@ -123,10 +123,7 @@ const UserDetailPage:React.FC=()=>{
                         })}>
                             Reset
                        </button>
-                        <button className="bg-white border-3 flex items-center justify-content text-red-700 w-40 h-10 rounded-lg m-5 p-5">
-                            <Link to="/home/donate"> Return back to donation page</Link>
-
-                        </button>
+                        
                     </div>
                     {error&& <p className="text-red-700">{error}</p>}
                 </form>
