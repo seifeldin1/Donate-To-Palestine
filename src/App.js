@@ -15,6 +15,7 @@ import RepPayment from './payToRepOption.tsx';
 import QRcode from './QRcodeOption.tsx';
 import VodafoneVerification from './vodafoneCashVerification.tsx';
 import Success from './successPage.tsx';
+import ContactingRep from './repContact.tsx';
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
           <Route path='/home/userInfo/payment/paymentOptions/QR' element={<QRcode/>}></Route>
           <Route path='/home/userInfo/payment/paymentOptions/vodafoneCash/verify' element={<VodafoneVerification/>}></Route>
           <Route path='/home/userInfo/payment/success' element={<Success/>}></Route>
+          <Route path='/home/userInfo/payment/RepContacting' element={<ContactingRep/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
