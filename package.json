@@ -1,5 +1,5 @@
 {
-  "homepage": "https://seifeldin1.github.io/Palestine-Donation-Website",
+
   "proxy": "http://localhost:3000",
   "name": "palestine-donation-website",
   "version": "0.1.0",
