@@ -1,5 +1,6 @@
 {
-
+  "homepage":"https://seifeldin1.github.io/Donate-To-Palestine",
+  
   "proxy": "http://localhost:3000",
 
   "name": "palestine-donation-website",
@@ -9,8 +10,6 @@
   "private": true,
 
   "dependencies": {
-
-    "homepage":"https://seifeldin1.github.io/Donate-To-Palestine",
 
     "@emotion/react": "^11.11.4",
 
