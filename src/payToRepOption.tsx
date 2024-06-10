@@ -1,6 +1,6 @@
 import React , {FC , useState} from "react";
 import { Link } from "react-router-dom";
-import { TextField , Box, Select, SelectChangeEvent, MenuItem } from "@mui/material";
+import { TextField , Box, Select, SelectChangeEvent, MenuItem , Button } from "@mui/material";
 
 const RepPayment:React.FC=()=>{
     const [city , setCity] =useState("");
@@ -25,12 +25,13 @@ const RepPayment:React.FC=()=>{
 
     return(
         <div className="flex items-center justify-center w-xl h-screen">
-            <div className="h-96 w-96 border-b-8 m-5 p-5 rounded-lg border-white bg-white">
-                <Box sx={{minWidth:150, minHeight:200}}>
+            <div className="h-76 w-96 border-b-8 m-5 p-5 rounded-lg border-white bg-white">
+                <Box sx={{minWidth:100, minHeight:100}}>
                     <Select
                     value={city}
                     onChange={handleChange}
                     displayEmpty
+                    
                     >
                         <MenuItem disabled value="">
                             Select A City
@@ -46,19 +47,28 @@ const RepPayment:React.FC=()=>{
                         }
 
                     </Select>
+                    <div className="flex justify-between m-10">
                     <Link to={city !== "" ? "/home/userInfo/payment/RepContacting" : "#"}>
-                        <button   className="bg-green-300 flex items-center justify-content text-red-700 w-60 h-20 rounded-lg m-5 p-5"
-                                  onClick={handleProceeding}
-                                  disabled={error!==""}>
+                        <Button  
+                        variant="contained"
+                        color="success"
+                        className="flex items-center justify-content text-red-700 w-30 h-20 m-5 p-5"
+                        onClick={handleProceeding}
+                        disabled={error!==""}>
                                 Proceed
-                        </button>
+                        </Button>
                     </Link>
                     <Link to="/home/userInfo/payment/paymentOptions">
-                        <button className="bg-blue-300 flex items-center justify-content text-white w-60 h-20 rounded-lg m-5 p-5">
+                        <Button
+                        color="primary"
+                        variant="contained"
+                        className="flex items-center justify-content text-white w-30 h-20 m-5 p-5">
                             Go Back
-                        </button>
+                        </Button>
 
                     </Link>
+                    </div>
+                   
                     {error && <p className="text-red-700">{error}</p>}
                 </Box>
             </div>

@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { Link } from "react-router-dom";
-import { TextField, Box } from "@mui/material";
+import { TextField, Box, Button, Typography } from "@mui/material";
 
 const VodafoneCashNumber: React.FC = () => {
     const [error, setError] = useState("");
@@ -37,7 +37,7 @@ const VodafoneCashNumber: React.FC = () => {
                         margin: "auto"
                     }}
                 >
-                    <h1 className="text-red-700 font-mono font-bold">Vodafone Cash Payment</h1>
+                    <Typography variant="h4" className="text-red-700 font-mono font-bold">Vodafone Cash Payment</Typography>
                     <br></br>
                     <Box sx={{ display: "flex", flexDirection: "row", gap: 2, marginBottom: 2 }}>
                         <TextField
@@ -52,13 +52,15 @@ const VodafoneCashNumber: React.FC = () => {
                             helperText={error}
                         />
                     </Box>
-                    <Link to="/home/userInfo/payment/paymentOptions/vodafoneCash/verify" onClick={handleProceeding}>
-                        <button
-                            className="bg-green-300 flex items-center justify-content text-red-700 w-60 h-20 rounded-lg m-5 p-5"
+                    <Link to="/home/userInfo/payment/paymentOptions/vodafoneCash/verify" onClick={handleProceeding} className="m-10">
+                        <Button
+                            variant="contained"
+                            color="success"
+                            className="flex items-center justify-content text-red-700 w-40 h-20"
                             disabled={!!error || vodafoneNumber.length !== 11}
                         >
                             Proceed To Verification
-                        </button>
+                        </Button>
                     </Link>
                     {error && <p className="text-red-700">{error}</p>}
                 </Box>
