@@ -423,7 +423,7 @@ const UserDetailPage:React.FC=()=>{
                         variant="contained"
                         color="primary"
                         onClick={submitHandler}
-                        disabled={!proceed}
+                        disabled={!userInfo.age||!userInfo.city||!userInfo.country||!userInfo.email||!userInfo.firstName||!userInfo.lastName||!userInfo.nationalID||!userInfo.phoneNumber}
                         className="transition ease-in-out duration-150 transform hover:scale-105"
                         >
                           <Link to={proceed?"/home/userInfo/payment":"#"} > Proceed to Paying</Link>  
