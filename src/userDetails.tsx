@@ -110,15 +110,19 @@ const UserDetailPage:React.FC=()=>{
             console.log("unable to create user" + error.message);
             //setError("You have entered a wrong data");
         }
-        if(Object.values(userInfo).some(value=>value==='')){ 
-            //alternative: userInfo.firstName===''|| userInfo.lastName===''||userInfo.email===''|| userInfo.country===''
-                        //|| userInfo.city===''|| userInfo.phoneNumber===''|| userInfo.nationalID===''|| userInfo.age===''
+        if (!Object.values(userInfo).every((value) => value !== '')) {
             setProceed(false);
-            setError('There is an incompelete field');
-        }
-        else{
-            setProceed(true);
-            setError('');
+            setError('There is an incomplete field');
+        } 
+        else {
+            if(parseInt(userInfo.age)>0 && parseInt(userInfo.age)<150){
+                setProceed(true);
+                setError('');
+            } 
+            else{
+                setProceed(false);
+                setError('Sorry, You have entered a wrong age');
+            }
         }
     }
 
