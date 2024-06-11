@@ -92,6 +92,7 @@ const UserDetailPage:React.FC=()=>{
             setError('');
             setNationalIDError('');
             setPhoneError('');
+            setProceed(true);
         }
     
         setUserInfo(prevState=>({...prevState , [name]:value}));
