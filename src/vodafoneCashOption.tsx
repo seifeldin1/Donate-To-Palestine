@@ -62,7 +62,6 @@ const VodafoneCashNumber: React.FC = () => {
                             Proceed To Verification
                         </Button>
                     </Link>
-                    {error && <p className="text-red-700">{error}</p>}
                 </Box>
             </div>
         </div>
