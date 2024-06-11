@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Donate-To-Palestine/static/css/main.3360f246.css",
-    "main.js": "/Donate-To-Palestine/static/js/main.b79b5cff.js",
+    "main.js": "/Donate-To-Palestine/static/js/main.96a98c67.js",
     "static/js/453.24d43f8c.chunk.js": "/Donate-To-Palestine/static/js/453.24d43f8c.chunk.js",
     "static/media/logo.svg": "/Donate-To-Palestine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Donate-To-Palestine/index.html",
     "main.3360f246.css.map": "/Donate-To-Palestine/static/css/main.3360f246.css.map",
-    "main.b79b5cff.js.map": "/Donate-To-Palestine/static/js/main.b79b5cff.js.map",
+    "main.96a98c67.js.map": "/Donate-To-Palestine/static/js/main.96a98c67.js.map",
     "453.24d43f8c.chunk.js.map": "/Donate-To-Palestine/static/js/453.24d43f8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3360f246.css",
-    "static/js/main.b79b5cff.js"
+    "static/js/main.96a98c67.js"
   ]
 }
