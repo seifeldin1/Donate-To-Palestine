@@ -1,3 +1,12 @@
+# Website Description:
+
+This was my final project at IEEE Web Development Course for spring 2024 , you can find the certificate at my linkedin account (https://www.linkedin.com/in/seif-dakroury-155747267/)
+
+The project was to design a donation website for palestine where we get from the user all necessary details and payement amounts. It was assumed that the organization is in Egypt so the payement options were having options that are valid only in Egypt. Payments are not yet activated because it was required not to take money. The website conatct other tabs like About Us , Contact Us and Events. 
+
+This website was designed using typescript , react.js , express.js , node.js , mongo database , tailwind and material UI.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
